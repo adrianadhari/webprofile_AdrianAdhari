@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  color: #252525;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+nav .container {
+  max-width: 968px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #ffffff;
+}
+nav .container .logo {
+  font-size: 18px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 15px;
+}
+nav ul li a {
+  font-size: 15px;
+}
+nav ul li a:hover {
+  font-size: 15px;
+  color: #5779e0;
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .social-media {
+  display: flex;
+  flex-direction: column;
+}
+header .social-media a {
+  margin-bottom: 16px;
+}
+header .social-media img {
+  width: 20px;
+}
+header .description h1 {
+  font-size: 46px;
+  color: #252525;
+  margin-bottom: 15px;
+}
+header .description .roles {
+  font-size: 22px;
+  color: #252525;
+  margin-bottom: 15px;
+}
+header .description .educations {
+  font-size: 16px;
+  color: #252525;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+header .description .btn-contact {
+  background-color: #5779e0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #FFF;
+}
+header .description .btn-contact:hover {
+  background-color: #2447b1;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  min-height: 760px;
+}
+.section-about .description {
+  margin-right: 60px;
+}
+.section-about .description h3 {
+  font-size: 26px;
+  color: #5779e0;
+  margin-bottom: 15px;
+}
+.section-about .description h1 {
+  font-size: 34px;
+}
+.section-about .description p {
+  text-align: justify;
+}
+.section-about .description .btn-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: #fff;
+  border: 1px solid #5779e0;
+  color: #5779e0;
+  font-weight: 600;
+}
+.section-about .description .btn-cv:hover {
+  background-color: #2447b1;
+  color: #fff;
+}
+.section-about .skills h2 {
+  margin-top: 55px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.section-about .skills .circle {
+  width: 40px;
+  border: 1px solid #5779e0;
+  border-radius: 50px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.section-portfolio {
+  margin-bottom: 200px;
+}
+.section-portfolio .header {
+  text-align: center;
+}
+.section-portfolio .header h3 {
+  font-size: 26px;
+  color: #5779e0;
+  margin-bottom: 15px;
+}
+.section-portfolio .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-portfolio .content img {
+  width: 450px;
+  margin-right: 50px;
+}
+.section-portfolio .content .description h1 {
+  font-size: 30px;
+  color: #5779e0;
+}
+.section-portfolio .content .description h4 {
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
+.section-certificates {
+  margin-bottom: 100px;
+}
+.section-certificates h3 {
+  font-size: 26px;
+  color: #5779e0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-certificates .certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.section-certificates .certificates-container .certificate-wrapper {
+  flex: 0 0 calc(50% - 10px); /* Membagi dua sertifikat per baris */
+  text-align: center;
+  margin-bottom: 20px; /* Jarak antara baris */
+  background-color: #FFF;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-certificates .certificates-container .certificate-wrapper .img-certificate {
+  max-width: 100%;
+  height: auto;
+}
+.section-certificates .certificates-container .certificate-wrapper p {
+  margin-top: 10px;
+}
+
+.section-contact {
+  margin-bottom: 150px;
+}
+.section-contact .heading h3 {
+  font-size: 26px;
+  color: #5779e0;
+  text-align: center;
+}
+.section-contact .heading p {
+  text-align: center;
+  font-size: 14px;
+  color: #8f8f8f;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.section-contact .contact-container {
+  display: flex;
+  justify-content: center;
+}
+.section-contact .contact-container .left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.section-contact .contact-container .left .content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.section-contact .contact-container .left .content .img-icon img {
+  width: 30px;
+  margin-right: 10px;
+}
+.section-contact .contact-container .left .content .description h5 {
+  font-weight: 400;
+  font-size: 19px;
+}
+.section-contact .contact-container .left .content .description p {
+  font-size: 14px;
+  color: #8f8f8f;
+  font-weight: 300;
+}
+.section-contact .contact-container .right h5 {
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.section-contact .contact-container .right p {
+  color: #8f8f8f;
+  margin-bottom: 20px;
+}
+.section-contact .contact-container .right img {
+  width: 25px;
+  margin-right: 20px;
+}
+
+footer {
+  height: 250px;
+  background-color: #5779e0;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+footer .name {
+  margin-right: 100px;
+}
+footer .name h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .name p {
+  color: #fff;
+  font-size: 14px;
+}
+footer .nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+footer .nav-footer ul {
+  display: flex;
+}
+footer .nav-footer ul li {
+  margin: 15px;
+}
+footer .nav-footer ul li a {
+  color: #FFF;
+}
+footer .nav-footer ul li a:hover {
+  color: #bcc9f0;
+}
+footer .nav-footer p {
+  font-size: 12px;
+  color: rgb(184, 184, 184);
+  padding-bottom: 40px;
+}
+footer .social-networks {
+  margin-top: 15px;
+  margin-left: 100px;
+}
+footer .social-networks img {
+  width: 20px;
+  margin-right: 15px;
+}
